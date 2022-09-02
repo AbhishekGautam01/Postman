@@ -62,3 +62,9 @@
 ![session variable](./img/storing-access-token.png)
 * Then all we need to do it pass it to the API call using the right mechanism for this we can go to the authorization tab. 
 ![Passing Bearer Token](./img/passing-token.png)
+
+## Using Random data in request
+* To pass a random data in body start with {{$ and it will give you suggestions for all random data generator functions available. 
+![random-data](./img/random-data.png)
+* You can see in console output the body for the request send has a randomly generated name. 
+![image.png](./img/random2.png)
