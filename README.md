@@ -10,3 +10,4 @@ Postman API Test Automation
     4. Postman web
     5. Http
     6. Postman Landscape
+2. [Creating REST API requests with Postman](./doc/1-rest-request-with-postman.md)
