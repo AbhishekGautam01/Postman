@@ -19,3 +19,18 @@
 * If your variable has secret data then you can set some dummy initial value.
 
 ## Get Request
+* `Endpoint`: Address of the url where you are sending the request. 
+* `Resources`: With REST we deal with resources like here product is resource. 
+![get](./img/get.png)
+
+## Visualizing Response
+* In your `Body` section in postman-gui we have options like **pretty, raw, review, visualize**
+* It has has by default json formatting selected. 
+* **Preview** makes sense with different types of data from any endpoint. Eg make get request to netflix.com
+![img](./img/Screenshot%202022-09-02%20135452.png)
+
+## Query Parameter
+* Casing it important for the query parameters. 
+* **Syntax**: `?<param_name>=<value>&<param_name2>=<value2>...`
+* if a query param is options and you send wrong param then api doesn't report error. 
+![query-param](./img/query-param.png)
