@@ -34,3 +34,14 @@
 * **Syntax**: `?<param_name>=<value>&<param_name2>=<value2>...`
 * if a query param is options and you send wrong param then api doesn't report error. 
 ![query-param](./img/query-param.png)
+
+
+## Shortcuts
+* Go to gear icons in top right then go to shortcuts, then you can go to shortcuts tab. 
+![ShortCuts](./img/Shortcuts.png)
+
+## Path Variables
+* **Syntax**: `baseurl/<endpoint>/:pathParamName=pathParamValue`
+<br/>
+![img](./img/Path.png)
+
