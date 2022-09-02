@@ -79,4 +79,8 @@
 
 ### Headers vs query param vs path param 
 * Query param and path param are about resource addresses. 
-* 
+
+## Sharing postman collection 
+* We have multiple options to share, one of them being sharing collection via link 
+![Sharing](./img/Sharing.png)
+* You can also export the collection. 
