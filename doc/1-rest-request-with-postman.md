@@ -45,3 +45,7 @@
 <br/>
 ![img](./img/Path.png)
 
+# Post
+* In below sample we are going to make a post request for no body. The status would return 201 Created. 
+![cart](./img/cart.png)
+![cart](./img/cart-add-item.png)
