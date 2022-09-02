@@ -54,3 +54,11 @@
 ## GET vs POST 
 ![Get-vs-Post](./img/Get-vs-Post.png)
 
+# API Authentication
+* First you need to figure out authenticate mechanism for API and get the right access token, client-id, client-secret, username, password , ect
+* Sample Call to get access token 
+![access token](./img/access-token-call.png)
+* Then we can go to collection and store it in variable, because access-token is a secret data , the initial value we can keep empty or give a message 
+![session variable](./img/storing-access-token.png)
+* Then all we need to do it pass it to the API call using the right mechanism for this we can go to the authorization tab. 
+![Passing Bearer Token](./img/passing-token.png)
