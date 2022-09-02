@@ -84,3 +84,8 @@
 * We have multiple options to share, one of them being sharing collection via link 
 ![Sharing](./img/Sharing.png)
 * You can also export the collection. 
+
+## Patch Request
+* Patch means to fix/repair something.
+![patch](./img/patch.png)
+![patch2.png](./img/patch2.png)
