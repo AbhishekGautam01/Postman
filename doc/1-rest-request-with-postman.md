@@ -89,3 +89,6 @@
 * Patch means to fix/repair something.
 ![patch](./img/patch.png)
 ![patch2.png](./img/patch2.png)
+
+## HEAD Request Message
+* This is a special http method, it doesn't have request/response body but it is a way to check if API is up and running without having to send an heavy request

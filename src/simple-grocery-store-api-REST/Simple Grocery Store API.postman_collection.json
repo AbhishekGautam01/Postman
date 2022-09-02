@@ -152,7 +152,7 @@
 					"variable": [
 						{
 							"key": "cartId",
-							"value": "A27vsp8JuJipRYdOd4DzA"
+							"value": "omcj8qsQpFBkI__wY6iwy"
 						}
 					]
 				}
@@ -186,7 +186,7 @@
 					"variable": [
 						{
 							"key": "cartId",
-							"value": "A27vsp8JuJipRYdOd4DzA"
+							"value": "qRCZb7ZE0Sv8hn0Uq6veb"
 						}
 					]
 				}
@@ -290,6 +290,76 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Get All Orders",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accessToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/orders",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update An Order",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accessToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerName\": \"joe doe\", \r\n    \"comment\": \"pick up at 2 pm\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/orders/:orderId",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"orders",
+						":orderId"
+					],
+					"variable": [
+						{
+							"key": "orderId",
+							"value": "omcj8qsQpFBkI__wY6iwy"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"event": [
@@ -320,6 +390,10 @@
 		{
 			"key": "accessToken",
 			"value": "YOUR ACCESS TOKEN"
+		},
+		{
+			"key": "cartId",
+			"value": "YOUR CART ID Value"
 		}
 	]
 }
