@@ -49,3 +49,8 @@
 * In below sample we are going to make a post request for no body. The status would return 201 Created. 
 ![cart](./img/cart.png)
 ![cart](./img/cart-add-item.png)
+
+
+## GET vs POST 
+![Get-vs-Post](./img/Get-vs-Post.png)
+
