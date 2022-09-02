@@ -68,3 +68,15 @@
 ![random-data](./img/random-data.png)
 * You can see in console output the body for the request send has a randomly generated name. 
 ![image.png](./img/random2.png)
+
+## Http Headers 
+* **Content-Type**: Telling api what type of request we are sending to API 
+* Responses also have headers which are returned by the API. 
+* headers are key value pair. 
+![Headers](./img/Headers.png)
+* Headers are used instead of body as they are intended to provide some additional information about the message we sent to api and adding this data to body will clog the body and make it have unnecessary attributes in body.
+* Postman automatically adds most typical headers we need. 
+
+### Headers vs query param vs path param 
+* Query param and path param are about resource addresses. 
+* 
