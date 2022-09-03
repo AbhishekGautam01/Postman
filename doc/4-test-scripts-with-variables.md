@@ -29,3 +29,12 @@
 * To delete a global variables `pm.globals.unset("boardId")`
 
 > **NOTE**: It is good practice to delete the variable once you dont need it.
+
+## Environment Variables
+* Similar to global variables but with narrower scope. 
+* Ideal for switching between between setups while still using same collection
+* Same usage in the request builder as with global variable.
+
+* You can create environments and have variables in them , then whichever environment you select based on that it will get the value of the variable. 
+
+![environments](./img/environments.png)
