@@ -43,3 +43,10 @@
 * `pm.environment.set("variables_key, variable_value);`
 * `pm.environment.unset("variable_key") // delete a variables`
 * `pm.environment.clear() // delete all variables`
+
+## Pre-request scripts
+
+* Similar to test scripts but with no assertions and run before request.
+* Ideal for making your request dynamic and it is usually used in combination with variables. 
+* **Pre-request script(eg calculate a timestamp and save it to a varibales) --> Http Request --> Test**
+![pre-req scripts](./img/pre-request-scripts.png)
