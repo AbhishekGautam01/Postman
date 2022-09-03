@@ -68,3 +68,7 @@ Postman API Test Automation
         1. [Accessing collections from newman](./doc/6-automatically-running-tests.md#accessing-collections-from-newman)
         1. [Specifying environments with newman](./doc/6-automatically-running-tests.md#specifying-environments-with-newman)
         1. [Generating Html reports from newman](./doc/6-automatically-running-tests.md#generating-html-reports-from-newman)
+<br/>
+
+8. [Workflows and scenarios](./doc/8-workflows-and-scenarios.md)
+    1. [Multiple worksflows within same collection : https://www.youtube.com/watch?v=FWYKOR0Zj28](./doc/8-workflows-and-scenarios.md#multiple-worksflows-within-same-collection--httpswwwyoutubecomwatchvfwykor0zj28)
