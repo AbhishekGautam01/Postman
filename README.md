@@ -46,3 +46,11 @@ Postman API Test Automation
     1. [Variables types](./doc/4-test-scripts-with-variables.md#Variables---types)
     1. [Setup different URL to test against different environments](./doc/4-test-scripts-with-variables.md#Setup-different-URL-to-test-against-different-environments)
     1. [Debugging tests](./doc/4-test-scripts-with-variables.md#Debugging-tests)
+<br/>
+
+6. [Advance Assertions](./doc/5-advance-assertions.md)
+    1. [Chai Assertion Library](./doc/5-advance-assertions.md#chai-assertion-library)
+    1. [Assertions](./doc/5-advance-assertions.md#assertions)
+    1. [Assertions on Array](./doc/5-advance-assertions.md#assertions-on-array)
+    1. [Assertions on nested objects](./doc/5-advance-assertions.md#assertions-on-nested-objects)
+    1. [Testing Headers & Cookies](./doc/5-advance-assertions.md#testing-headers--cookies)

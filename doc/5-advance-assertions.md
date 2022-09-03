@@ -49,3 +49,110 @@ pm.test("Testing object", function(){
 
 })
 ```
+
+## Assertions on Array 
+
+* Mock response body used: 
+```json
+{
+"companyId": 10101,
+"regionId": 36554,
+"filters": [
+    {
+    "id": 101,
+    "name": "VENDOR",
+    "isAllowed": false
+    },
+    {
+    "id": 102,
+    "name": "COUNTRY",
+    "isAllowed": true
+    },
+    {
+    "id": 103,
+    "name": "MANUFACTURER",
+    "isAllowed": false
+    }
+]
+}
+```
+
+* Test 
+
+```js
+let jsonData = pm.response.json();
+let manufacturer;
+
+for(let filter of jsonData.filters){
+    if(filter.name === 'MANUFACTURER')
+        manufacturer = filter;
+}
+
+pm.test("Manufacturer should not be allowed", function(){
+    pm.expect(manufacturer.name).to.eql("MANUFACTURER");
+    pm.expect(manufacturer.isAllowed).to.be.false
+})
+
+```
+
+## Assertions on nested objects
+
+* Json data used for this 
+```json
+{
+"id": "5ab34c7b0ba0f8932222352c",
+"name": "My board 7",
+"prefs": {
+    "permissionLevel": "private",
+    "voting": "disabled",
+        "comments": {
+        "status": "disabled",
+        "count": 0
+        }
+    },
+"limits": {
+    "54bba24af6196bd5f824e563": {
+        "boards": {
+            "totalPerMember": {
+                "count": 1,
+                "status": "ok",
+                "disableAt": 56050,
+                "warnAt": 53100
+                }
+            }
+        }
+    }
+}
+```
+
+* Test 
+```js
+let jsonData = pm.response.json()
+
+let commentStatus = jsonData.prefs.comments.status;
+
+pm.test("Comments should be disabled", function(){
+    pm.expect(commentsStatus).to.eql("disabled")
+})
+
+let boardStatus;
+
+for(let key in jsonData.limits){ // iterating object properties
+    if(jsonData.limits[key].hasOwnProperty('boards')){
+        boardStatus = jsonData.limits[key].boards.totalPerMember.status;
+    }
+}
+
+pm.test("status should be ok", function(){
+    pm.expect(boardStatus).to.eql("ok")
+})
+```
+
+## Testing Headers & Cookies
+* This is how you retrieve a header from the response: `pm.response.headers.get('X-Cache') ` and in a test:
+    * **Header exists**: `pm.response.to.have.header(X-Cache'); `
+    * **Header has value**: `pm.expect(pm.response.headers.get('X-Cache')).to.eql('HIT');` 
+
+* **Cookies**: In a similar fashion you can test cookies as well.
+    * **Cookie exists**: `pm.expect(pm.cookies.has('sessionId')).to.be.true;`
+    * **Cookie has value**: `pm.expect(pm.cookies.get('sessionId')).to.eql(’ad3se3ss8sg7sg3');`
