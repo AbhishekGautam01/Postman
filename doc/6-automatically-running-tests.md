@@ -12,3 +12,10 @@
 ![Collection runner](./img/collection-runner.png)
 * Once run is completed you will get the run summary and you can export the report as well. 
 ![summary](./img/collection-runner-summary.png)
+
+## Postman Monitor 
+* It allows to run api calls at regular intervals. This is pro feature but currently we can make 1000 call/month. 
+* You need to go monitor tabs and create a monitor by filling in all details. 
+* Postman server are not in the same network as you are. 
+* We cannot import global variables but they can be created from scripts. 
+* Global and environment variables are not persisted for later runs. 
