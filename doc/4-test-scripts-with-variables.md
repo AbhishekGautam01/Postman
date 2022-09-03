@@ -38,3 +38,8 @@
 * You can create environments and have variables in them , then whichever environment you select based on that it will get the value of the variable. 
 
 ![environments](./img/environments.png)
+
+* `pm.environment.get("variable_key")`
+* `pm.environment.set("variables_key, variable_value);`
+* `pm.environment.unset("variable_key") // delete a variables`
+* `pm.environment.clear() // delete all variables`
