@@ -2,6 +2,9 @@
 Postman API Test Automation
 [Postman Quick Reference Guide and Cheat Sheet](https://postman-quick-reference-guide.readthedocs.io/en/latest/)
 [Postman Old vs New Testing & Scripting Style Comparitive doc](./doc/Postman-old-and-new-testing-API.pdf)
+
+![testing-overview](./doc/img/testing-overview.png)
+
 ## In this repository
 
 1. [Overview.md](./doc/0-overiview.md)
