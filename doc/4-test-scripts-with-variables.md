@@ -50,3 +50,28 @@
 * Ideal for making your request dynamic and it is usually used in combination with variables. 
 * **Pre-request script(eg calculate a timestamp and save it to a varibales) --> Http Request --> Test**
 ![pre-req scripts](./img/pre-request-scripts.png)
+
+## Variables types
+![variables-precedence](./img/variables-precedence.png)
+* if we set same variable in global and environment then the value set in environment will be taken. 
+* **Global Variables**: Variables ideal for quick results and prototyping. 
+    * Avoid using this as much as possible 
+    * Clear/remove variables once you do not need them 
+    * Get variables in scripts using the scoped getter when working with global variables. `pm.variables.get()` 
+> **NOTE** the method **pm.variables.get()** is advisable to use as this will figure out the correct scope of that variable , but if you use pm.global.get() and later you want to move those to environment variable you will have to do postman script changes. 
+<br/>
+
+* **Environment Variables**: Ideal for working with different servers
+    * Storing environment specific information 
+    * URLs , auth information can be stored here. 
+    * Passing data to request is another use case for this variables. 
+
+* **Collection Variables**: Tied to a single collection. It cannot be shared by multiple collection. 
+    * This is a good alternative to environment variable if we have a single server
+    * URLs / authentication credential if only one environment exists
+    * **Setting a collection variable** : `pm.collectionVariables.set("name", value)`
+    * **Getting a collection variable** : `pm.collectionVaribes.get("name")`
+
+* **Data Variables**: Used when working with multiple data sets
+    * Exist only during the iternation
+    * They can be declared only by CSV or json file. 
