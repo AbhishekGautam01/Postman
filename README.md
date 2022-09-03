@@ -1,5 +1,6 @@
 # Postman
 Postman API Test Automation
+[Postman Quick Reference Guide and Cheat Sheet](https://postman-quick-reference-guide.readthedocs.io/en/latest/)
 
 ## In this repository
 
@@ -28,3 +29,5 @@ Postman API Test Automation
     1. [Sharing postman collection](./doc/1-rest-request-with-postman.md#Sharing-postman-collection)
     1. [Patch Request](./doc/1-rest-request-with-postman.md#Patch-Request)
     1. [HEAD Request Message](./doc/1-rest-request-with-postman.md#HEAD-Request-Message)
+3. [Trello API Testing](./doc/2-trello-api.md)
+4. [API Test Snippets](./doc/3-test-scripts.md)
