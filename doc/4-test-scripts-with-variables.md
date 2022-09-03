@@ -75,3 +75,16 @@
 * **Data Variables**: Used when working with multiple data sets
     * Exist only during the iternation
     * They can be declared only by CSV or json file. 
+
+## Setup different URL to test against different environments
+* This can be done using the environments and environment variables. 
+* Because postman won't tell which environment is active so it is good practise to have an env variable declared in all environments so you can do the testing easily and then you can check in your test and pre-scripts if right environemnt is active or not 
+
+```js
+if(pm.environment.get("env") === 'production'){
+    // do something 
+}
+```
+
+## Debugging tests
+* if you want to see some values during test then you should write console.log() and then check the values in console output.

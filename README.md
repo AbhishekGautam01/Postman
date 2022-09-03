@@ -1,7 +1,7 @@
 # Postman
 Postman API Test Automation
 [Postman Quick Reference Guide and Cheat Sheet](https://postman-quick-reference-guide.readthedocs.io/en/latest/)
-
+[Postman Old vs New Testing & Scripting Style Comparitive doc](./doc/Postman-old-and-new-testing-API.pdf)
 ## In this repository
 
 1. [Overview.md](./doc/0-overiview.md)
@@ -29,5 +29,20 @@ Postman API Test Automation
     1. [Sharing postman collection](./doc/1-rest-request-with-postman.md#Sharing-postman-collection)
     1. [Patch Request](./doc/1-rest-request-with-postman.md#Patch-Request)
     1. [HEAD Request Message](./doc/1-rest-request-with-postman.md#HEAD-Request-Message)
+    <br/>
+
 3. [Trello API Testing](./doc/2-trello-api.md)
-4. [API Test Snippets](./doc/3-test-scripts.md)
+<br/>
+
+4. [API Test Scripts](./doc/3-test-scripts.md)
+<br/>
+
+5. [Test Scripts with Variables & Variables Scopes](./doc/4-test-scripts-with-variables.md)
+    1. [Types of Variables](./doc/4-test-scripts-with-variables.md#Types-of-Variables)
+    1. [Accessing variables in the scripts](./doc/4-test-scripts-with-variables.md#Accessing-variables-in-the-scripts)
+    1. [Global Variables](./doc/4-test-scripts-with-variables.md#Global-Variables)
+    1. [Environment Variables](./doc/4-test-scripts-with-variables.md#Environment-Variables)
+    1. [Pre-request scripts](./doc/4-test-scripts-with-variables.md#Pre-request-scripts)
+    1. [Variables types](./doc/4-test-scripts-with-variables.md#Variables---types)
+    1. [Setup different URL to test against different environments](./doc/4-test-scripts-with-variables.md#Setup-different-URL-to-test-against-different-environments)
+    1. [Debugging tests](./doc/4-test-scripts-with-variables.md#Debugging-tests)
