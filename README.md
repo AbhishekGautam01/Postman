@@ -57,3 +57,14 @@ Postman API Test Automation
     1. [Assertions on Array](./doc/5-advance-assertions.md#assertions-on-array)
     1. [Assertions on nested objects](./doc/5-advance-assertions.md#assertions-on-nested-objects)
     1. [Testing Headers & Cookies](./doc/5-advance-assertions.md#testing-headers--cookies)
+<br/>
+
+7. [Automatically running tests](./doc/6-automatically-running-tests.md)
+    1. [Postman Collection runner](./doc/6-automatically-running-tests.md#postman-collection-runner)
+    1. [Postman Monitor](./doc/6-automatically-running-tests.md#postman-monitor)
+    1. [Automating with Newman](./doc/6-automatically-running-tests.md#automating-with-newman)
+        1. [Installing new man](./doc/6-automatically-running-tests.md#installing-new-man)
+        1. [Running a collection in postman](./doc/6-automatically-running-tests.md#running-a-collection-in-postman)
+        1. [Accessing collections from newman](./doc/6-automatically-running-tests.md#accessing-collections-from-newman)
+        1. [Specifying environments with newman](./doc/6-automatically-running-tests.md#specifying-environments-with-newman)
+        1. [Generating Html reports from newman](./doc/6-automatically-running-tests.md#generating-html-reports-from-newman)

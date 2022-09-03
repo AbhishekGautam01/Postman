@@ -49,3 +49,12 @@
 > **NOTE**: If you have not set the right initial values for environment variables you may get an error, in that case you will have to edit the export environment.json file
 
 ![image.png](./img/newman-env.png)
+
+### Generating Html reports from newman 
+* For this first we need to install the newman reporter. You need to also install it in your CI server. 
+[Link to full report](../src/trello-automation-flow/Trello%20API%20Automation-2022-09-03-13-56-47-054-0.html)
+> npm i -g newman-reporter-htmlextra
+* post that whenever you want generate report you need to append command with `--reporters=htmlextra`
+![img](./img/reporter.png)
+* Then a new directory will be created with name newman which has report. 
+![img](./img/newman-report.png)
